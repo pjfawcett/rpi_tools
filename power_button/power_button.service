@@ -1,0 +1,9 @@
+[Unit]
+Description=GPIO reboot and poweroff button
+
+[Service]
+Type=exec
+ExecStart=/usr/bin/python3 /usr/local/bin/power_button.py
+
+[Install]
+WantedBy=multi-user.target
